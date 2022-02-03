@@ -1,8 +1,6 @@
 
-x = [[1,2],
-    [3,4],
-    [5,6]]
+def transpose_matrix(matrix):
+    result = [[matrix[j][i] for j in range(len(matrix))] for i in range(len(matrix[0]))]
+    print(result)
 
-result = [[x[j][i] for j in range(len(x))] for i in range(len(x[0]))]
 
-print(result)
